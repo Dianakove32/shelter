@@ -12,6 +12,10 @@ padding: 15px 45px;
     &_bordered{
         background-color: $color-linked;
         border-color: $color-primary;
+
+    }
+    &__slider{
+        width: 261px;
     }
     &:hover{
         background-color: $color-primary-dark;

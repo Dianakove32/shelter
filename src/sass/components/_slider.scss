@@ -1,0 +1,28 @@
+.slider__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: $color-bg-light;
+    padding-bottom: 100px;
+}
+.slider__title{
+    max-width: 400px;
+    letter-spacing: 0.06rem;
+    //text-align: center;
+    padding-top: 80px;
+    display: flex;
+align-items: center;
+text-align: center;
+}
+
+// .slider-container{
+
+// }
+.slider__arrow-left, .slider__arrow-right{
+    width: 52px;
+    height:52px;
+    border: 2px solid $color-primary-dark;
+    border-radius: 100%;
+    text-align: center;
+    padding-top:18px ;
+}

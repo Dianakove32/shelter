@@ -1,0 +1,18 @@
+.slider__card{
+   max-width: 270px;
+   height: 435px;
+   background-color: $color-linked;
+   margin-bottom: 45px;
+   margin-right: 45px;
+
+}
+// .slider_cat{
+//     max-width: 200px;
+//    height: 240px;
+// }
+.card_name{
+    @include font($size:2.0rem, $height: 2.3rem);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

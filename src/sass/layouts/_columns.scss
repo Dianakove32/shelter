@@ -1,0 +1,6 @@
+ .layout-5-column {
+     display: flex;
+justify-content: space-between;
+// @include column($width:10%)
+align-items: center;
+}
