@@ -1,0 +1,31 @@
+.main-screen{
+    background: $color-bg-darck;
+    &__title{
+        line-height: 5.8rem;
+        width: 397px;
+        letter-spacing: 0px;
+    }
+    &__text{
+        margin-top: 39px;
+        margin-bottom: 40px;
+      max-width: 460px;
+    @include font ($size: 1.5rem, $height: 2.5rem);
+    color:$color-link;
+//commm
+}
+
+}
+.main-screen__img{
+    margin-top: 161px;
+    margin-left: 42px;//105
+    }
+.main-screen__content{
+    margin-top: 324px ;
+
+    margin-left: 77px;
+}
+.main-screen__wrapper{
+    display: flex;
+    justify-content: center;
+}
+

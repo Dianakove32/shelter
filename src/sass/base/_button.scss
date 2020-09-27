@@ -1,0 +1,21 @@
+.button{
+padding: 15px 45px;
+    width: 207px;
+    height: 52px;
+    border-radius: 100px;
+    font-size:17px ;
+    color: $color-textBtn;
+    border: 1px solid $color-primary;
+    &_colored{
+          background-color: $color-primary;
+    }
+    &_bordered{
+        background-color: $color-linked;
+        border-color: $color-primary;
+    }
+    &:hover{
+        background-color: $color-primary-dark;
+        cursor: pointer;
+        @extend %transition
+    }
+}

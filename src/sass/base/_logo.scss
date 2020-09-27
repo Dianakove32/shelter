@@ -1,0 +1,20 @@
+.logo{
+    display: flex;
+    flex-direction: column;
+    padding-left: 78px;
+}
+.logo-title{
+color: $color-primary;
+font-size: 3.2rem;
+padding-top: 57px;
+margin-bottom: 10px;
+letter-spacing: 0.18rem;
+}
+.logo-subtitle{
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    color: $color-light-text;
+    letter-spacing: 0.15rem;
+    font-weight: 400px;
+    margin: 0;
+}
