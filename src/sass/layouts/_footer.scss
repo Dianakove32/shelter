@@ -1,0 +1,41 @@
+.footer{
+     background: $color-bg-darck;
+}
+.wrapper__footer{
+    padding-top: 40px;
+}
+.footer__content{
+    display: flex;
+
+    flex-direction: row;
+    max-width: 1200px;
+}
+.footer__info{
+    max-width: 278px;
+    margin-right: 161px;
+}
+.location__title, .contacts_title{
+    color: $color-light-text;
+    letter-spacing: 0.06rem;
+    margin: 0;
+}
+.contacts__link,.location__link {
+    @include font($size:2rem, $height: 2.3rem);
+    letter-spacing: 0.06rem;
+    >a{
+        text-decoration: none;
+        color: $color-primary-dark;
+    }
+}
+.contacts_title{
+padding-bottom: 43px;
+}
+.contacts__link{
+    padding-bottom: 49px;
+}
+ .location__title{
+    padding-bottom: 33px;
+}
+.location__link{
+    padding-bottom: 38px;
+}

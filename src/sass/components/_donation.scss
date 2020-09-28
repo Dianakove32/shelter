@@ -1,8 +1,11 @@
+.donation{
+
+    background-color: $color-bg-light;
+}
 .donation__wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-bg-light;
 }
 .donation__content{
     width: 380px;

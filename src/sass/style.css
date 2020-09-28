@@ -417,7 +417,7 @@ ul {
   box-sizing: border-box;
 }
 
-.button:hover {
+.slider__arrow-left, .slider__arrow-right, .button:hover {
   transition: all 0.3s ease-out;
 }
 
@@ -526,6 +526,14 @@ h5 {
   font-style: normal;
   line-height: 115%;
   letter-spacing: 0.06rem;
+}
+
+.ico__mail {
+  width: 40px;
+  height: 26px;
+  display: inline-block;
+  text-align: center;
+  background-repeat: no-repeat;
 }
 
 .logo {
@@ -639,11 +647,14 @@ h5 {
   margin-bottom: 30px;
 }
 
+.donation {
+  background-color: #F6F6F6;
+}
+
 .donation__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #F6F6F6;
 }
 
 .donation__content {
@@ -706,11 +717,14 @@ h5 {
   margin-bottom: 60px;
 }
 
+.slider {
+  background: #F6F6F6;
+}
+
 .slider__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F6F6F6;
   padding-bottom: 100px;
 }
 
@@ -730,6 +744,10 @@ h5 {
   border-radius: 100%;
   text-align: center;
   padding-top: 18px;
+}
+.slider__arrow-left:hover, .slider__arrow-right:hover {
+  cursor: pointer;
+  background-color: #F1CDB3;
 }
 
 .slider__arrow-left {
@@ -785,6 +803,59 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.footer {
+  background: url(../../img/noise_transparent.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+}
+
+.wrapper__footer {
+  padding-top: 40px;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+}
+
+.footer__info {
+  max-width: 278px;
+  margin-right: 161px;
+}
+
+.location__title, .contacts_title {
+  color: #ffffff;
+  letter-spacing: 0.06rem;
+  margin: 0;
+}
+
+.contacts__link, .location__link {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.3rem;
+  letter-spacing: 0.06rem;
+}
+.contacts__link > a, .location__link > a {
+  text-decoration: none;
+  color: #F1CDB3;
+}
+
+.contacts_title {
+  padding-bottom: 43px;
+}
+
+.contacts__link {
+  padding-bottom: 49px;
+}
+
+.location__title {
+  padding-bottom: 33px;
+}
+
+.location__link {
+  padding-bottom: 38px;
 }
 
 /*# sourceMappingURL=style.css.map */
