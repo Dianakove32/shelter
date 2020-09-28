@@ -2,7 +2,8 @@ html{
     font-size: 10px;;
 }
 body{
-  @extend %font-prim
+  @extend %font-prim;
+  color: $color-h;
 }
 h1{
   letter-spacing: 6%;
