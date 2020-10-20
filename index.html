@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./src/sass/style.css" />
-  <title>Document</title>
+  <title>Shelter</title>
 </head>
 
 <body>
@@ -18,7 +18,8 @@
       <nav class="header__navigation">
         <ul class="navigation">
           <li class="navigation__link navigation__link_active">About the shelter</li>
-          <li class="navigation__link navigation__link_disabled">Our pets</li>
+          <li class="navigation__link "><a class="navigation__link_disabled" href="our_pets.html" target="_blank" rel="noopener noreferrer">Our pets</a>
+            </li>
           <li class="navigation__link navigation__link_disabled">Help the shelter</li>
           <li class="navigation__link navigation__link_disabled">Contacts</li>
         </ul>
@@ -33,12 +34,14 @@
           open heart. He or she will love you more than anybody else in the world, you will see!</p>
         <button class="button button_colored">Make a friend</button>
       </div>
-      <img src="./src/img/start-screen-puppy.png" class="main-screen__img" />
+      <div class="img__main-scr"> <img src="./src/img/start-screen-puppy.png" class="main-screen__img" /></div>
+
     </div>
   </section>
   <section class="about">
     <div class="wrapper about__wrapper">
-      <img src="./src/img/about-pets.png" class="about__img" />
+      <div class="about__image-wrapper"><img src="./src/img/about-pets.png" class="about__img" /></div>
+
       <div class="about__content">
         <h3 class="about__title">About the shelter “Cozy House”</h3>
         <p class="about__text">
@@ -63,21 +66,24 @@
       <h3 class="slider__title">Our friends who are looking for a house</h3>
       <div class="layout-5-column slider-container">
         <div class="slider__arrow-left"><img src="./src/img/Arrow-left.png" alt=""></div>
+       <div class="carsd__container">
         <div class="slider__card">
-          <img src="./src/img/card-cat.png" class="slider_cat" />
+          <img src="./src/img/pets-katrine.png" class="slider_cat" />
           <p class="card_name">Katrine</p>
           <button class="button button_bordered">Learn more</button>
         </div>
         <div class="slider__card">
-          <img src="./src/img/card-dogWhite.png" class="slider_cat" />
+          <img src="./src/img/pets-jennifer.png" class="slider_cat" />
           <p class="card_name">Jennifer</p>
           <button class="button button_bordered">Learn more</button>
         </div>
         <div class="slider__card">
-          <img src="./src/img/card-dogRed.png" class="slider_cat" />
+          <img src="./src/img/pets-woody.png" class="slider_cat" />
           <p class="card_name">Woody</p>
           <button class="button button_bordered">Learn more</button>
         </div>
+       </div>
+
         <div class="slider__arrow-right"><img src="./src/img/Arrow-right.png" alt="" class="arrow"></div>
       </div>
       <button class="button button_colored button__slider">Get to know the rest</button>
@@ -126,7 +132,7 @@
       <div class="donation__content">
         <h3 class="donation_title">You can also make a donation</h3>
         <h5 class="donation_subtitle">Name of the bank / Type of bank account</h5>
-        <p class="donation__number">8380 2880 8028 8791 7435</p>
+        <p class="donation__number"> <img src="./src/img/credit-card.png" alt="" srcset="">  8380 2880 8028 8791 7435</p>
         <p class="donation_text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
           a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
           malesuada fames ac ante ipsum primis in faucibus.</p>
@@ -144,7 +150,8 @@
                 data="picture.svg">
                 <img
                   src="./src/img/ico-footer/mail.svg"></object>
-              </span><a href="mailto:">email@shelter.com</a></div>
+              </span><a href="mailto:">email@shelter.com</a>
+            </div>
               <div class="contacts__link"><span class="ico ico__tel">
                 <object
                 type="image/svg+xml"
@@ -157,11 +164,9 @@
             <div class="content__location footer__info">
               <h3 class="location__title">We are waiting for your visit</h3>
               <div class="location__link"><span class="ico ico__loc">
-                <object
-                type="image/svg+xml"
-                data="picture.svg">
+
                 <img
-                  src="./src/img/ico-footer/pin.svg"></object>
+                  src="./src/img/ico-footer/pin.svg">
               </span><a href="">1 Central Street, Boston (entrance from
                   the store)</a></div>
               <div class="location__link"><span class="ico ico__loc">
@@ -172,11 +177,12 @@
                   src="./src/img/ico-footer/pin.svg"></object>
               </span><a href="">18 South Park, London </a></div>
             </div>
+
             <img src="./src/img/footer-puppy.png" class="footer__img">
-          </div>
+</div>
         </div>
       </section>
-
+<script src="/src/js/js.js"></script>
 </body>
 
 </html>
