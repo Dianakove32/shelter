@@ -1,4 +1,20 @@
-.wrapper{
-    width: $content-width;
-    margin: 0 auto;
+.wrapper {
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 40px;
+   display: flex;
+    flex: 1;
+
+  &__help {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    padding-top: 80px;
+  }
+  @include media-mobilesmall {
+    padding: 30px 10px 0px 10px;
+  }
 }

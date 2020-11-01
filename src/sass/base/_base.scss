@@ -6,7 +6,7 @@ body{
   color: $color-h;
 }
 h1{
-  letter-spacing: 6%;
+  letter-spacing: 0.2rem;
   @include font($size:3.2rem, $height: 3.5rem);
   margin: 0;
 
@@ -15,10 +15,16 @@ h2{
     @include font($size:4.4rem, $height: 6.7rem,$weight:normal);
     color:$color-light-text;
     margin: 0;
-
+    @include media-mobilesmall{
+      font-size: 2.5rem;
+     }
   }
   h3{
-    @include font($size:3.5rem, $height: 130%)
+    @include font($size:3.5rem, $height: 130%);
+    margin:0;
+    @include media-mobilesmall{
+      font-size: 2.5rem;
+     }
   }
   h4{
     @include font($size:2rem, $height: 2.3rem)

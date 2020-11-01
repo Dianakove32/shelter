@@ -1,9 +1,29 @@
 .header__wrapper{
 display: flex;
 justify-content: space-between;
+@include media-tablet{
+
+    padding : 30px;
+}
 
 }
 .header{
-    height: 14px;
-    background-color: rgba(72, 58, 48, 1)
+
+    height: 60px;
+    background-color: rgba(72, 58, 48, 1);
+    background-size: cover;
+
+}
+.header-pets{
+    width: 100vw;
+    max-width: 100%;
+    position: sticky;
+    top: 0px;
+z-index: 2;
+    min-height: 120px;
+    background-color: $color-light-text;
+    background-size: cover;
+display: flex;
+align-items: center;
+
 }

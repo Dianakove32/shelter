@@ -1,41 +1,91 @@
-.footer{
-     background: $color-bg-darck;
-}
-.wrapper__footer{
-    padding-top: 40px;
-}
-.footer__content{
-    display: flex;
+.footer {
+    background: $color-bg-darck;
+    background-size: cover;
+    &__img {
+        margin-left: 21px;
+        >img{
+         @include media-tablet {
+            margin-left: 0px;
+        }
+        @include media-mobilesmall {
+            max-width: 260px;
+            width: 100%;
+            min-height: 269px;
+        }
+        }
 
-    flex-direction: row;
-    max-width: 1200px;
-}
-.footer__info{
-    max-width: 278px;
-    margin-right: 161px;
-}
-.location__title, .contacts_title{
-    color: $color-light-text;
-    letter-spacing: 0.06rem;
-    margin: 0;
-}
-.contacts__link,.location__link {
-    @include font($size:2rem, $height: 2.3rem);
-    letter-spacing: 0.06rem;
-    >a{
-        text-decoration: none;
-        color: $color-primary-dark;
     }
 }
-.contacts_title{
-padding-bottom: 43px;
+
+.wrapper__footer {
+    padding-top: 38px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include media-tablet {
+        justify-content: space-evenly;
+        //padding: 0 64px;
+    }
+    @include media-mobilesmall {
+        justify-content: center;
+        text-align: center;
+        padding-top: 0;
+    }
 }
-.contacts__link{
-    padding-bottom: 49px;
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    max-width: 778px;
+    margin-top: 19px;
+
+    @include media-mobilesmall {
+        flex-direction: column;
+    }
 }
- .location__title{
+.content__location {
+    padding-left: 162px;
+    @include media-tablet {
+        padding-left: 82px;
+    }
+    @include media-mobilesmall {
+        padding-left: 0px;
+    }
+}
+.location__title,
+.contacts_title {
+    color: $color-light-text;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    > span {
+        display: block;
+    }
+    @include media-mobilesmall {
+        font-size: 25px;
+    }
+}
+.contacts__link,
+.location__link {
+    @include font($size: 2rem, $height: 2.3rem);
+    letter-spacing: 0.06rem;
+    display: flex;
+    align-items: center;
+    > a {
+        text-decoration: none;
+        color: $color-primary-dark;
+        > span {
+            display: block;
+        }
+    }
+}
+.contacts_title {
+    padding-bottom: 42px;
+}
+.contacts__link {
+    padding-bottom: 43px;
+}
+.location__title {
     padding-bottom: 33px;
 }
-.location__link{
-    padding-bottom: 38px;
+.location__link {
+    padding-bottom: 33px;
 }

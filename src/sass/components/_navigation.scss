@@ -1,20 +1,33 @@
 .header__navigation {
-  width: 441px;
+  width: 443px;
+  display: flex;
+  @include media-mobilesmall{
+      display: none;
+  }
 }
 
 .navigation {
+   // font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     display: flex;
     font-size: 1.5rem;
     line-height: 2.4rem;
-
+//margin-left: 30px;
     justify-content: space-between;
-    padding-top:57px;
+
 }
 .navigation__link {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 160%;
+    >a{
+        text-decoration: none;
+        &:hover {
+            color: $color-linked;
 
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
     &_disabled {
         color: $color-link;
     }
@@ -23,6 +36,38 @@
         color: $color-linked;
         border-bottom: 3px solid $color-primary-dark
     }
+
+    &:hover {
+        color: $color-linked;
+
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+}
+
+.navigation__link-pets {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 160%;
+    >a{
+        text-decoration: none;
+        &:hover {
+            color: $color-linked;
+
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        &_disabled {
+            color: $color-h;
+        }
+        &_active {
+            color: $color-textBtn;
+            border-bottom: 3px solid $color-primary-dark
+        }
+    }
+
+
+
+
 
     &:hover {
         color: $color-linked;

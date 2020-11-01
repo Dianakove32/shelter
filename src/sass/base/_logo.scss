@@ -1,20 +1,38 @@
 .logo{
     display: flex;
     flex-direction: column;
-    padding-left: 78px;
+  //  padding-left: 78px;
 }
 .logo-title{
 color: $color-primary;
 font-size: 3.2rem;
-padding-top: 57px;
 margin-bottom: 10px;
-letter-spacing: 0.18rem;
+
+
 }
+.logo-title-prts{
+  color: $color-h;
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+
+  letter-spacing: 0.2rem;
+  }
 .logo-subtitle{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3rem;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     color: $color-light-text;
     letter-spacing: 0.15rem;
-    font-weight: 400px;
+    font-weight: 300px;
     margin: 0;
+}
+.logo-subtitle-pets{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  color: $color-textBtn;
+  letter-spacing: 0.15rem;
+  font-weight: normal;
+  margin: 0;
+  font-style: normal;
 }

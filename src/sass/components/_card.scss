@@ -1,18 +1,69 @@
-.slider__card{
-   max-width: 270px;
-   height: 435px;
-   background-color: $color-linked;
-   margin-bottom: 45px;
-   margin-right: 45px;
-
+.slider__card {
+    max-width: 270px;
+    height: 435px;
+    background-color: $color-linked;
+    margin-bottom: 45px;
+    margin-right: 45px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-// .slider_cat{
-//     max-width: 200px;
-//    height: 240px;
-// }
-.card_name{
-    @include font($size:2.0rem, $height: 2.3rem);
+.slider__card-pets {
+    padding-bottom: 28px;
+    max-width: 270px;
+    height: 435px;
+    background-color: $color-linked;
+margin-right: 50px;
+    align-items: center;
+    justify-content: space-between;
+    @include media-mobilesmall {
+        position: absolute;
+        opacity: 1;
+        transition: all ease 1s;
+    }
+}
+.opacity0{
+    opacity: 0;
+}
+.carsd__container {
+    display: flex;
+    flex-wrap: wrap;
+    @include media-tablet{
+         overflow: hidden;
+         flex-wrap: nowrap;
+             }
+             @include media-mobilesmall {
+                overflow: hidden;
+         flex-wrap: nowrap;
+            }
+}
+.carsd__container-pets {
+    margin-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 3rem;
+    @include media-mobilesmall {
+        position: relative;
+        height: 420px;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    @include media-tablet {
+
+        justify-content: center;
+    }
+}
+.slider_cat {
+    max-width: 270px;
+    height: 270px;
+
+    width: 100%;
+}
+.card_name {
+    @include font($size: 2rem, $height: 2.3rem);
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }

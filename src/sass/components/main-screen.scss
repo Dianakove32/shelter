@@ -1,31 +1,86 @@
-.main-screen{
+.main-screen {
     background: $color-bg-darck;
-    &__title{
+    display: flex;
+    &__wrapper {
+        display: flex;
+        padding-top: 99px;
+        flex-wrap: wrap;
+        @include media-tablet {
+            justify-content: center;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // width: 460px;
+        padding-bottom: 25px;
+
+        @include media-mobilesmall {
+            text-align: center;
+        }
+        > button {
+            @include media-tablet {
+                margin-left: 123px;
+                margin-bottom: 105px;
+            }
+            @include media-mobilesmall {
+                margin-top: 30px;
+                margin-left: 46px
+            }
+        }
+        @include media-tablet {
+            padding-top: 60px;
+            padding-bottom: 0px;
+        }
+    }
+    &__title {
         line-height: 5.8rem;
         width: 397px;
         letter-spacing: 0px;
+        @include media-mobilesmall {
+            width: 233px;
+            text-align: center;
+            line-height: 130%;
+        }
     }
-    &__text{
-        margin-top: 39px;
-        margin-bottom: 40px;
-      max-width: 460px;
-    @include font ($size: 1.5rem, $height: 2.5rem);
-    color:$color-link;
-//commm
-}
+    &__text {
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        max-width: 460px;
+        width: 100%;
+        @include font($size: 1.5rem, $height: 2.5rem);
+        color: $color-link;
 
-}
-.main-screen__img{
-    margin-top: 161px;
-    margin-left: 42px;//105
+        @include media-mobilesmall {
+            max-width: 300px;
+            text-align: center;
+        }
     }
-.main-screen__content{
-    margin-top: 324px ;
-
-    margin-left: 77px;
+    &__img {
+        max-width: 100%;
+        @include media-tablet {
+            max-width: 569px;
+            min-height: 593px;
+        }
+        @include media-mobilesmall {
+            max-width: 260px;
+            min-height: 271px;
+            margin-left: 35px;
+        }
+    }
 }
-.main-screen__wrapper{
-    display: flex;
-    justify-content: center;
-}
 
+.img__main-scr {
+    max-width: 69.8rem;
+    max-height: 72.8rem;
+    margin-top: 119px;
+    margin-left: 42px;
+    @include media-tablet {
+        margin-top: 100px;
+        margin-left: 139px;
+    }
+    @include media-mobilesmall {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}

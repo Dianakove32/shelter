@@ -1,38 +1,135 @@
 .slider{
     background: $color-bg-light;
+    &__wrapper{
+
+        max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include media-tablet {
+                 padding-bottom: 80px 30px 90px 30px;
+              }
+    }
 }
-.slider__wrapper{
+.slider-container{
+    position: relative;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+@include media-tablet {
+    max-width: 773px;
+ }
+ @include media-mobilesmall {
+    max-width: 294px;
+
+}
+
+}
+.main-slider{
+
+    width: 900px;
+    height: 435px;
+     overflow: hidden;
+}
+#polosa{
+    width: 2600px;
+display: flex;
+position: relative;
+left: 0;
+transition: all ease 1s;
+}
+
+// .slider {
+//     background: $color-bg-light;
+//     padding-bottom: 100px;
+// }
+// .slider__wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding-bottom: 100px;
+//     @include media-tablet {
+//         padding-bottom: 80px 30px 90px 30px;
+//     }
+// }
+// .slider-container{
+// display: flex;
+// justify-content: space-between;
+// align-items: center;
+
+// }
+// .main-slider{
+//     display: flex;
+//     width: 900px;
+//     height: 435px;
+//     overflow: hidden;
+
+// }
+// #polosa{
+//     width: 3000px;
+// display: flex;
+// position: relative;
+// left: 0;
+// transition: all ease 1s;
+// }
+.slider-pets__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 80px;
+    text-align: center;
+    > h3 {
+        margin: 0;
+    }
 
-    padding-bottom: 100px;
-}
-.slider__title{
+ }
+.slider__title {
     max-width: 400px;
     letter-spacing: 0.06rem;
     //text-align: center;
+    padding-top: 58px;
+    padding-bottom: 58px;
+
+   // align-items: center;
+    text-align: center;
+    >span{
+        display: block;
+    }
+    @include media-mobilesmall {
+        padding-top: 0px;
+
+    }
+}
+.slider__title-pets {
+    letter-spacing: 0.22rem;
+    //text-align: center;
     padding-top: 80px;
-    display: flex;
-align-items: center;
-text-align: center;
+    span {
+        display: block;
+    }
+    @include media-mobilesmall {
+        padding-top: 0px;
+        letter-spacing: 0.06rem;
+    }
 }
 
-// .slider-container{
-
-// }
-.slider__arrow-left, .slider__arrow-right{
+.slider__arrow-left,
+.slider__arrow-right {
     width: 52px;
-    height:52px;
+    height: 52px;
     border: 2px solid $color-primary-dark;
     border-radius: 100%;
     text-align: center;
-    padding-top:18px ;
-    &:hover{
-    cursor: pointer;
-    background-color: $color-primary-dark;}
+    padding-top: 18px;
+    &:hover {
+        cursor: pointer;
+        background-color: $color-primary-dark;
+    }
     @extend %transition;
 }
-.slider__arrow-left{
+.slider__arrow-left {
     margin-right: 45px;
 }

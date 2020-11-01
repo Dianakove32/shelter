@@ -1,0 +1,32 @@
+.pagination-pets{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+}
+.pagination-button{
+
+    margin: 0 10px;
+    width: 52px;
+height:52px;
+border: 2px solid $color-primary-dark;
+border-radius: 100%;
+text-align: center;
+padding-top:18px ;
+&:hover{
+cursor: pointer;
+background-color: $color-primary-dark;
+}
+@extend %transition;
+&_disable{
+    color: $color-link;
+    border: 2px solid $color-link;
+    &:hover{
+        cursor: auto;
+background-color:transparent;
+    }
+
+}
+@include media-mobilesmall{
+   margin: 0 5px;
+   }
+}
